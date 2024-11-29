@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Staples Price List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6f00; /* Orange */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .category {
+            margin-top: 30px;
+        }
+
+        .category h2 {
+            color: #ff6f00; /* Orange */
+            border-bottom: 2px solid #ff6f00;
+            padding-bottom: 10px;
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .product p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .price {
+            font-size: 18px;
+            color: #ff6f00; /* Orange */
+            font-weight: bold;
+        }
+
+        .product button {
+            background-color: #ff6f00; /* Orange */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product button:hover {
+            background-color: #e65c00; /* Darker orange on hover */
+        }
+
+        footer {
+            background-color: #ff6f00; /* Orange */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Staples Price List</h1>
+        <p>Your Essential Pantry Items at Great Prices</p>
+    </header>
+
+    <div class="container">
+        <!-- Staples Section -->
+        <div class="category">
+            <h2>Staples</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/44/24/4b/44244b2f138418cb71ff491ed14ecdaa.jpg" alt="Rice">
+                    <h3>Rice</h3>
+                    <p>Long Grain White Rice</p>
+                    <p class="price">$4.99 / kg</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/9e/cc/ce/9eccce24984dd5488810360073d008e9.jpg" alt="Flour">
+                    <h3>Flour</h3>
+                    <p>All Purpose Flour</p>
+                    <p class="price">$2.49 / kg</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/bd/0f/13/bd0f1304894078d30c830761e6a57932.jpg" alt="Sugar">
+                    <h3>Sugar</h3>
+                    <p>Granulated White Sugar</p>
+                    <p class="price">$1.99 / kg</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/27/d7/e1/27d7e1974ccfb4f5aee9b6942433b1ca.jpg" alt="Salt">
+                    <h3>Salt</h3>
+                    <p>Refined Table Salt</p>
+                    <p class="price">$0.99 / kg</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/48/24/14/482414c78eb99db90a8e16f7c953d49e.jpg" alt="Cooking Oil">
+                    <h3>Cooking Oil</h3>
+                    <p>Refined Sunflower Oil</p>
+                    <p class="price">$3.49 / liter</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/8c/fc/1c/8cfc1cafef8b2b2265ea623ab8b47e21.jpg" alt="Lentils">
+                    <h3>Lentils</h3>
+                    <p>Premium Red Lentils</p>
+                    <p class="price">$2.99 / kg</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/af/a7/07/afa707ed47ee78ede35878bd80c7733a.jpg" alt="Pulses">
+                    <h3>Pulses</h3>
+                    <p>Mixed Green Lentils</p>
+                    <p class="price">$3.29 / kg</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/1e/54/af/1e54afeaa85c39ac3464a613b911e61e.jpg" alt="Tea">
+                    <h3>Tea</h3>
+                    <p>Premium Assam Tea</p>
+                    <p class="price">$4.49 / box</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/be/b6/c2/beb6c26a4007a8a022ef8d7a93d889df.jpg" alt="Coffee">
+                    <h3>Coffee</h3>
+                    <p>Instant Coffee Powder</p>
+                    <p class="price">$5.99 / jar</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/fb/e8/e4/fbe8e413d7d70fc44274a450515bcca5.jpg" alt="Spices">
+                    <h3>Spices</h3>
+                    <p>Mixed Spices</p>
+                    <p class="price">$1.79 / packet</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Staples Store. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

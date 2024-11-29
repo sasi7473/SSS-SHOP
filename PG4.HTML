@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dairy Product Price List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6f00; /* Orange */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .category {
+            margin-top: 30px;
+        }
+
+        .category h2 {
+            color: #ff6f00; /* Orange */
+            border-bottom: 2px solid #ff6f00;
+            padding-bottom: 10px;
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .product p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .price {
+            font-size: 18px;
+            color: #ff6f00; /* Orange */
+            font-weight: bold;
+        }
+
+        .product button {
+            background-color: #ff6f00; /* Orange */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product button:hover {
+            background-color: #e65c00; /* Darker orange on hover */
+        }
+
+        footer {
+            background-color: #ff6f00; /* Orange */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Dairy Product Price List</h1>
+        <p>Fresh Dairy Products at Your Fingertips</p>
+    </header>
+
+    <div class="container">
+        <!-- Dairy Products Section -->
+        <div class="category">
+            <h2>Dairy Products</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/bd/3f/53/bd3f536a6e1c78107ed3a64c7a8a023c.jpg" alt="Milk">
+                    <h3>Milk</h3>
+                    <p>Fresh & Full Cream Milk</p>
+                    <p class="price">$1.29</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/52/29/11/522911ef736f015f87efaaecb637ad36.jpg" alt="Cheese">
+                    <h3>Cheese</h3>
+                    <p>Soft and Creamy Cheese</p>
+                    <p class="price">$2.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/f0/c2/aa/f0c2aa5d6524ef5ad697909c1e957f62.jpg" alt="Butter">
+                    <h3>Butter</h3>
+                    <p>Premium Quality Butter</p>
+                    <p class="price">$3.49</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/0f/92/66/0f9266aa71cfb1b32864307c1dd6c339.jpg" alt="Yogurt">
+                    <h3>Yogurt</h3>
+                    <p>Fresh and Creamy Yogurt</p>
+                    <p class="price">$1.89</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/c1/23/84/c12384dc5196066778e105373e85da95.jpg" alt="Cottage Cheese">
+                    <h3>Cottage Cheese</h3>
+                    <p>Soft and Delicious</p>
+                    <p class="price">$4.19</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/be/4e/90/be4e90b67bbab38d9e1f2fee0e0c852a.jpg" alt="Ice Cream">
+                    <h3>Ice Cream</h3>
+                    <p>Rich and Creamy Ice Cream</p>
+                    <p class="price">$3.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/b1/6b/23/b16b232b20a680ecdcae102f0d856a52.jpg" alt="Cream">
+                    <h3>Cream</h3>
+                    <p>Fresh Whipping Cream</p>
+                    <p class="price">$2.49</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/cb/e0/f2/cbe0f2170fe2d0212e54c2379912d8b9.jpg" alt="Ghee">
+                    <h3>Ghee</h3>
+                    <p>Pure and Natural Ghee</p>
+                    <p class="price">$6.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dairy Products Store. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
